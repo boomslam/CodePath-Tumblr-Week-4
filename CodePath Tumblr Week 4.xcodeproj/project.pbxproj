@@ -14,6 +14,11 @@
 		A3EAB14F1C7E175700F9C315 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3EAB14D1C7E175700F9C315 /* LaunchScreen.storyboard */; };
 		A3EAB15A1C7E175700F9C315 /* CodePath_Tumblr_Week_4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EAB1591C7E175700F9C315 /* CodePath_Tumblr_Week_4Tests.swift */; };
 		A3EAB1651C7E175700F9C315 /* CodePath_Tumblr_Week_4UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EAB1641C7E175700F9C315 /* CodePath_Tumblr_Week_4UITests.swift */; };
+		A3EAB1731C7E1C6E00F9C315 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EAB1721C7E1C6E00F9C315 /* HomeViewController.swift */; };
+		A3EAB1751C7E1CC800F9C315 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EAB1741C7E1CC800F9C315 /* SearchViewController.swift */; };
+		A3EAB1771C7E1D4000F9C315 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EAB1761C7E1D4000F9C315 /* ComposeViewController.swift */; };
+		A3EAB1791C7E1F5400F9C315 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EAB1781C7E1F5400F9C315 /* AccountViewController.swift */; };
+		A3EAB17B1C7E1FED00F9C315 /* TrendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EAB17A1C7E1FED00F9C315 /* TrendingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		A3EAB1601C7E175700F9C315 /* CodePath Tumblr Week 4UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CodePath Tumblr Week 4UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3EAB1641C7E175700F9C315 /* CodePath_Tumblr_Week_4UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodePath_Tumblr_Week_4UITests.swift; sourceTree = "<group>"; };
 		A3EAB1661C7E175700F9C315 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3EAB1721C7E1C6E00F9C315 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A3EAB1741C7E1CC800F9C315 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		A3EAB1761C7E1D4000F9C315 /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
+		A3EAB1781C7E1F5400F9C315 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		A3EAB17A1C7E1FED00F9C315 /* TrendingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrendingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +110,11 @@
 				A3EAB1441C7E175700F9C315 /* AppDelegate.swift */,
 				A3EAB1461C7E175700F9C315 /* ViewController.swift */,
 				A3EAB1481C7E175700F9C315 /* Main.storyboard */,
+				A3EAB17A1C7E1FED00F9C315 /* TrendingViewController.swift */,
+				A3EAB1781C7E1F5400F9C315 /* AccountViewController.swift */,
+				A3EAB1761C7E1D4000F9C315 /* ComposeViewController.swift */,
+				A3EAB1741C7E1CC800F9C315 /* SearchViewController.swift */,
+				A3EAB1721C7E1C6E00F9C315 /* HomeViewController.swift */,
 				A3EAB14B1C7E175700F9C315 /* Assets.xcassets */,
 				A3EAB14D1C7E175700F9C315 /* LaunchScreen.storyboard */,
 				A3EAB1501C7E175700F9C315 /* Info.plist */,
@@ -256,8 +271,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3EAB17B1C7E1FED00F9C315 /* TrendingViewController.swift in Sources */,
+				A3EAB1771C7E1D4000F9C315 /* ComposeViewController.swift in Sources */,
 				A3EAB1471C7E175700F9C315 /* ViewController.swift in Sources */,
+				A3EAB1791C7E1F5400F9C315 /* AccountViewController.swift in Sources */,
 				A3EAB1451C7E175700F9C315 /* AppDelegate.swift in Sources */,
+				A3EAB1751C7E1CC800F9C315 /* SearchViewController.swift in Sources */,
+				A3EAB1731C7E1C6E00F9C315 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

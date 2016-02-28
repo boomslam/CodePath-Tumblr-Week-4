@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var contentView: UIView!
+    @IBOutlet weak var exploreView: UIImageView!
+    
     
     //outlet for array of buttons
     @IBOutlet var buttons: [UIButton]!
@@ -26,6 +28,9 @@ class ViewController: UIViewController {
     
     //keeps track of button that was selected. Will link buttons tag value to variable.
     var selectedIndex: Int = 0
+    
+    //Define cusstom transition variable
+    var fadeTransition: FadeTransition!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -77,7 +82,7 @@ class ViewController: UIViewController {
         sender.selected = true
         
         //Access current view controller from array
-        let vc = viewControllers[selectedIndex]
+        var vc = viewControllers[selectedIndex]
         
         //Add new view controllers
         addChildViewController(vc)
@@ -89,8 +94,45 @@ class ViewController: UIViewController {
         //Call viewDidAppear method of vc being added
         vc.didMoveToParentViewController(self)
         
+//        if searchViewController == vc {
+//            
+//            self.exploreView.alpha = 0
+//            
+//        } else {
+//            
+//            self.exploreView.alpha = 1
+//        }
+        
+        
+        self.exploreView.alpha = 1
+        if searchViewController == vc {
+        UIView.animateWithDuration(0.4, animations: {
+            // This causes first view to fade in and second view to fade out
+            self.exploreView.alpha = 0
+            })
+        } else {
+            self.exploreView.alpha = 1
+        }
+        
+        
     }
-
-
 }
+
+//    func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//    
+//    // Access the ViewController that you will be transitioning too, a.k.a, the destinationViewController.
+//    var destinationViewController = segue.destinationViewController
+//    
+//    // Set the modal presentation style of your destinationViewController to be custom.
+//    destinationViewController.modalPresentationStyle = UIModalPresentationStyle.Custom
+//    
+//    // Create a new instance of your fadeTransition.
+//    fadeTransition = FadeTransition()
+//    
+//    // Tell the destinationViewController's  transitioning delegate to look in fadeTransition for transition instructions.
+//    destinationViewController.transitioningDelegate = fadeTransition
+//    
+//    // Adjust the transition duration. (seconds)
+//    fadeTransition.duration = 1.0
+//}
 
